@@ -107,7 +107,7 @@
 	
 							<div class="send_call small">
 								<img src="assets/i/pulsar.png" alt="">
-								<a href="">
+								<a href="" data-toggle="modal" data-target="#feed">
 									Замовити зворотній дзвінок
 								</a>
 							</div>
@@ -117,6 +117,39 @@
 				</div>
 			</div>
 		</header>
+		<div class="modal fade" id="feed" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Замовити зворотній<br> дзвінок</h5>
+						<button type="button" class="close d-flex justify-content-center align-items-center mr-1 mt-1" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body px-5">
+						<form action="">
+							<input type="text" class="my-3" required placeholder="Ім'я*">
+							<div class="w-100"></div>
+							<input type="text" class="my-3" required placeholder="Телефон*">
+							<div class="w-100"></div>
+							<div class="col-12"><small>* Поля обов'язкові для заповнення. </small></div>
+							<div class="row">
+								<div class="col-12">
+	
+									<div class="custom-control custom-checkbox my-2">
+										<input type="checkbox" checked class="custom-control-input" id="checkconfy" name="example1">
+										<label class="custom-control-label" for="checkconfy">Я ознайомився/ознайомилась з <a href="">політикою конфіденційності </a>сервісу. </label>
+									</div>
+									<div class="text-center">
+										<button class="btn my-3">Відправти</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	<div class="container">
 		<nav aria-label="breadcrumb" class="">
@@ -237,69 +270,118 @@
 			</div>
 			<div class="container mt-4">
 				<div class="text-center">
-					<button class="btn">Зв'язатися з нами</button>
+					<button class="btn" data-toggle="modal" data-target="#fedbeack">Зв'язатися з нами</button>
 				</div>
 			</div>
 		</div>
 		<div class="row mb-4">
 			<div class="col-12">
-	<div id="carusel_news" class="carousel slide col mt-4" data-ride="carousel">
-	
-		<div class="carousel-inner ">
-	
-			<div class="carousel-item active ">
-				<div class="d-flex ">
-	
-					<div class="col-12 col-md-4">
-						<a data-fancybox="gallery" href="assets/i/sliderabout/001.jpg">
-							<img class="img-fluid" src="assets/i/sliderabout/001.jpg" alt="images">
-						</a>
+				<div id="carusel_news" class="carousel slide col mt-4" data-ride="carousel">
+				
+					<div class="carousel-inner ">
+				
+						<div class="carousel-item active ">
+							<div class="d-flex ">
+				
+								<div class="col-12 col-md-4">
+									<a data-fancybox="gallery" href="assets/i/sliderabout/001.jpg">
+										<img class="img-fluid" src="assets/i/sliderabout/001.jpg" alt="images">
+									</a>
+								</div>
+				
+								<div class="col-12 col-md-4">
+									<a data-fancybox="gallery" href="assets/i/sliderabout/002.jpg">
+										<img class="img-fluid" src="assets/i/sliderabout/002.jpg" alt="images">
+									</a>
+								</div>
+				
+								<div class="col-12 col-md-4">
+									<a data-fancybox="gallery" href="assets/i/sliderabout/003.png">
+										<img class="img-fluid" src="assets/i/sliderabout/003.png" alt="images">
+									</a>
+								</div>
+				
+							</div>
+						</div>
+						<div class="carousel-item ">
+							<div class="d-flex ">
+				
+								<div class="col-12 col-md-4">
+									<a data-fancybox="gallery" href="assets/i/sliderabout/001.jpg">
+										<img class="img-fluid" src="assets/i/sliderabout/001.jpg" alt="images">
+									</a>
+								</div>
+				
+								<div class="col-12 col-md-4">
+									<a data-fancybox="gallery" href="assets/i/sliderabout/002.jpg">
+										<img class="img-fluid" src="assets/i/sliderabout/002.jpg" alt="images">
+									</a>
+								</div>
+				
+								<div class="col-12 col-md-4">
+									<a data-fancybox="gallery" href="assets/i/sliderabout/003.png">
+										<img class="img-fluid" src="assets/i/sliderabout/003.png" alt="images">
+									</a>
+								</div>
+				
+							</div>
+						</div>
+				
 					</div>
-	
-					<div class="col-12 col-md-4">
-						<a data-fancybox="gallery" href="assets/i/sliderabout/002.jpg">
-							<img class="img-fluid" src="assets/i/sliderabout/002.jpg" alt="images">
-						</a>
-					</div>
-	
-					<div class="col-12 col-md-4">
-						<a data-fancybox="gallery" href="assets/i/sliderabout/003.png">
-							<img class="img-fluid" src="assets/i/sliderabout/003.png" alt="images">
-						</a>
-					</div>
-	
+					<ol class="carousel-indicators">
+						<li data-target="#carusel_news" data-slide-to="0" class="active"></li>
+						<li data-target="#carusel_news" data-slide-to="1"></li>
+					</ol>
 				</div>
 			</div>
-			<div class="carousel-item ">
-				<div class="d-flex ">
-	
-					<div class="col-12 col-md-4">
-						<a data-fancybox="gallery" href="assets/i/sliderabout/001.jpg">
-							<img class="img-fluid" src="assets/i/sliderabout/001.jpg" alt="images">
-						</a>
-					</div>
-	
-					<div class="col-12 col-md-4">
-						<a data-fancybox="gallery" href="assets/i/sliderabout/002.jpg">
-							<img class="img-fluid" src="assets/i/sliderabout/002.jpg" alt="images">
-						</a>
-					</div>
-	
-					<div class="col-12 col-md-4">
-						<a data-fancybox="gallery" href="assets/i/sliderabout/003.png">
-							<img class="img-fluid" src="assets/i/sliderabout/003.png" alt="images">
-						</a>
-					</div>
-	
-				</div>
-			</div>
-	
 		</div>
-		<ol class="carousel-indicators">
-			<li data-target="#carusel_news" data-slide-to="0" class="active"></li>
-			<li data-target="#carusel_news" data-slide-to="1"></li>
-		</ol>
 	</div>
+	
+	
+	<div class="modal fade bd-example-modal-xl" id="fedbeack" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog  modal-dialog-centered modal-xl" role="document">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Зв'язатися з нами</h5>
+					<button type="button" class="close d-flex justify-content-center align-items-center mr-1 mt-1" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body px-5">
+					<form action="">
+						<div class="row">
+							<div class="col-md-6 col-12">
+								<input type="text" class="my-3" required placeholder="Назва фірми*">
+							</div>
+							<div class="col-md-6 col-12">
+								<input type="text" class="my-3" required placeholder="Ім'я контактної особи*">
+							</div>
+							<div class="w-100"></div>
+							<div class="col-md-6 col-12">
+								<input type="text" class="my-3" required placeholder="Телефон*">
+							</div>
+							<div class="col-md-6 col-12">
+								<input type="email" class="my-3" required placeholder="E-mail*">
+							</div>
+							<div class="w-100"></div>
+							<div class="col-12">
+								<textarea class="p-3" name="" id="" cols="30" rows="5" placeholder="Текст повідомлення*" required></textarea>
+							</div>
+						</div>
+						<div class="col-12"><small>* Поля обов'язкові для заповнення. </small></div>
+						<div class="row">
+							<div class="col-12">
+								<div class="custom-control custom-checkbox my-2">
+									<input type="checkbox" checked class="custom-control-input" id="checkconfy" name="example1">
+									<label class="custom-control-label" for="checkconfy">Я ознайомився/ознайомилась з <a href="">політикою конфіденційності </a>сервісу. </label>
+								</div>
+								<div class="text-center">
+									<button class="btn my-3">Відправти</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -391,10 +473,43 @@
 						</ul>
 						<ul class="d-flex align-items-center pulsar">
 							<li><img src="assets/i/pulsar.png" alt="pulsar"></li>
-							<li><a href="">Замовити зворотній дзвінок</a></li>
+							<li><a href="" data-toggle="modal" data-target="#foot">Замовити зворотній дзвінок</a></li>
 						</ul>
 					</div>
 	
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="foot" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Замовити зворотній<br> дзвінок</h5>
+						<button type="button" class="close d-flex justify-content-center align-items-center mr-1 mt-1" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body px-5">
+						<form action="">
+							<input type="text" class="my-3" required placeholder="Ім'я*">
+							<div class="w-100"></div>
+							<input type="text" class="my-3" required placeholder="Телефон*">
+							<div class="w-100"></div>
+							<div class="col-12"><small>* Поля обов'язкові для заповнення. </small></div>
+							<div class="row">
+								<div class="col-12">
+	
+									<div class="custom-control custom-checkbox my-2">
+										<input type="checkbox" checked class="custom-control-input" id="checkconfy" name="example1">
+										<label class="custom-control-label" for="checkconfy">Я ознайомився/ознайомилась з <a href="">політикою конфіденційності </a>сервісу. </label>
+									</div>
+									<div class="text-center">
+										<button class="btn my-3">Відправти</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

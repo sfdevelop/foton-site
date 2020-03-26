@@ -79,7 +79,7 @@
 	
 							<div class="send_call small">
 								<img src="assets/i/pulsar.png" alt="">
-								<a href="">
+								<a href="" data-toggle="modal" data-target="#feed">
 									Замовити зворотній дзвінок
 								</a>
 							</div>
@@ -89,6 +89,34 @@
 				</div>
 			</div>
 		</header>
+		<div class="modal fade" id="feed" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Замовити зворотній<br> дзвінок</h5>
+						<button type="button" class="close d-flex justify-content-center align-items-center mr-1 mt-1" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body px-5">
+						<form action="">
+							<input type="text" class="my-3" required placeholder="Ім'я*">
+							<div class="w-100"></div>
+							<input type="text" class="my-3" required placeholder="Телефон*">
+							<div class="w-100"></div>
+							<div class="col-12"><small>* Поля обов'язкові для заповнення. </small></div>
+							<div class="custom-control custom-checkbox my-2">
+								<input type="checkbox" checked class="custom-control-input" id="checkconfy" name="example1">
+								<label class="custom-control-label" for="checkconfy">Я ознайомився/ознайомилась з <a href="">політикою конфіденційності </a>сервісу. </label>
+							</div>
+							<div class="text-center">
+								<button class="btn my-3">Відправти</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="mainscreen d-flex align-items-center">
 			<div class="container">
 				<div class="row ">
@@ -162,9 +190,39 @@
 					<div class="col profile">
 						<div class="row justify-content-between">
 							<a href="profile.html"><img src="assets/i/point.png" alt="point">Заповнити анкету</a>
-							<a href=""><img src="assets/i/point.png" alt="point"> Подати резюме</a>
+							<a href="" data-toggle="modal" data-target="#resume"><img src="assets/i/point.png" alt="point"> Подати резюме</a>
 							<a href="welder.html"><img src="assets/i/point.png" alt="point"> Подати резюме для зварювальників</a>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Подати резюме</h5>
+						<button type="button" class="close d-flex justify-content-center align-items-center mr-1 mt-1" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body px-5">
+						<form action="">
+							<div class="w-100 mb-4"></div>
+							<div class="custom-file">
+								<input type="file" class="custom-file-input" id="customFile">
+								<label class="custom-file-label" for="customFile">Завантажити резюме</label>
+							</div>
+							<div class="w-100 mb-5"></div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" checked class="custom-control-input" id="checkconfy" name="example1">
+								<label class="custom-control-label" for="checkconfy">Я ознайомився/ознайомилась з <a href="">політикою конфіденційності </a>сервісу. </label>
+							</div>
+							<div class="text-center">
+								<button class="btn my-3">Відправти</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -628,13 +686,48 @@
 						</ul>
 						<ul class="d-flex align-items-center pulsar">
 							<li><img src="assets/i/pulsar.png" alt="pulsar"></li>
-							<li><a href="">Замовити зворотній дзвінок</a></li>
+							<li><a href="" data-toggle="modal" data-target="#foot">Замовити зворотній дзвінок</a></li>
 						</ul>
 					</div>
 	
 				</div>
 			</div>
 		</div>
+		<div class="modal fade" id="foot" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Замовити зворотній<br> дзвінок</h5>
+						<button type="button" class="close d-flex justify-content-center align-items-center mr-1 mt-1" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body px-5">
+						<form action="">
+							<input type="text" class="my-3" required placeholder="Ім'я*">
+							<div class="w-100"></div>
+							<input type="text" class="my-3" required placeholder="Телефон*">
+							<div class="w-100"></div>
+							<div class="col-12"><small>* Поля обов'язкові для заповнення. </small></div>
+							<div class="row">
+								<div class="col-12">
+	
+									<div class="custom-control custom-checkbox my-2">
+										<input type="checkbox" checked class="custom-control-input" id="checkconfy" name="example1">
+										<label class="custom-control-label" for="checkconfy">Я ознайомився/ознайомилась з <a href="">політикою конфіденційності </a>сервісу. </label>
+									</div>
+									<div class="text-center">
+										<button class="btn my-3">Відправти</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 
 	<!--JS-->
 	<script src="assets/js/main.min.js"></script>
