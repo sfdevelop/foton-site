@@ -21161,7 +21161,7 @@ select {
 
 .fixed,
 .ground {
-    background-image: url(../i/screen_bg.png);
+    background-image: url(/assets/i/screen_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -21240,7 +21240,7 @@ header .col-11 .send_call a {
 
 .mainscreen {
     min-height: 80vh;
-    background-image: url(../i/screen.png);
+    background-image: url(/assets/i/screen.png);
     background-size: cover;
     background-position: top center;
     color: #fff;
@@ -21553,7 +21553,7 @@ header .col-11 .send_call a {
 .hot_left ul li {
     padding-left: 35px;
     list-style: none;
-    background-image: url(../i/point.png);
+    background-image: url(/assets/i/point.png);
     background-position: left center;
     background-repeat: no-repeat;
     line-height: 1.2;
@@ -21630,7 +21630,7 @@ header .col-11 .send_call a {
 .serch__work {
     padding-top: 120px;
     padding-bottom: 120px;
-    background: url(../i/serch_work.png);
+    background: url(/assets/i/serch_work.png);
     background-position: left button;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21663,7 +21663,7 @@ header .col-11 .send_call a {
 .carusel__work {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-image: url(../i/carusel__work.png);
+    background-image: url(/assets/i/carusel__work.png);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21794,7 +21794,7 @@ header .col-11 .send_call a {
 .send__summary {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-image: url(../i/sammery.png);
+    background-image: url(/assets/i/sammery.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21940,7 +21940,7 @@ header .col-11 .send_call a {
 .subscribe {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-image: url(../i/subscribe.png);
+    background-image: url(/assets/i/subscribe.png);
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22200,7 +22200,7 @@ header .col-11 .send_call a {
 }
 
 .vacancie__box .text ul li {
-    background: url(../i/marker.png) no-repeat left center;
+    background: url(/assets/i/marker.png) no-repeat left center;
     padding-left: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -22443,7 +22443,7 @@ header .col-11 .send_call a {
 
 .about_full .href_bleack a {
     color: #333;
-    background-image: url(../i/point.png);
+    background-image: url(/assets/i/point.png);
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 35px;
@@ -22456,7 +22456,7 @@ header .col-11 .send_call a {
 .count_about {
     font-size: 50px;
     color: #333;
-    background-image: url(../i/count.png);
+    background-image: url(/assets/i/count.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
