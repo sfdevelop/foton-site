@@ -187,7 +187,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="mb-5 mt-1 count py-5">
+	<div class="mb-5 mt-1 count_about py-5">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 my-4 col-lg-4 text-center">
@@ -245,9 +245,9 @@
 			</div>
 			<div class="col-12 href_bleack mb-4 ">
 				<div class="d-flex justify-content-between flex-column flex-md-row flex-wrap flex-md-nowrap">
-					<a href="">Заповнити анкету</a>
-					<a href="">Подати резюме</a>
-					<a href="">Подати резюме для зварювальників</a>
+					<a href="profile.html">Заповнити анкету</a>
+					<a href="" data-toggle="modal" data-target="#resume">Подати резюме</a>
+					<a href="welder.html">Подати резюме для зварювальників</a>
 				</div>
 			</div>
 		</div>
@@ -379,6 +379,36 @@
 									<button class="btn my-3">Відправти</button>
 								</div>
 							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Подати резюме</h5>
+					<button type="button" class="close d-flex justify-content-center align-items-center mr-1 mt-1" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body px-5">
+					<form action="">
+						<div class="w-100 mb-4"></div>
+						<div class="custom-file">
+							<input type="file" class="custom-file-input" id="customFile">
+							<label class="custom-file-label" for="customFile">Завантажити резюме</label>
+						</div>
+						<div class="w-100 mb-5"></div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" checked class="custom-control-input" id="checkconfy" name="example1">
+							<label class="custom-control-label" for="checkconfy">Я ознайомився/ознайомилась з <a href="">політикою конфіденційності </a>сервісу. </label>
+						</div>
+						<div class="text-center">
+							<button class="btn my-3">Відправти</button>
 						</div>
 					</form>
 				</div>

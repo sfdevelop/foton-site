@@ -22453,7 +22453,7 @@ header .col-11 .send_call a {
     color: #EA7501;
 }
 
-.count {
+.count_about {
     font-size: 50px;
     color: #333;
     background-image: url(../i/count.png);
@@ -22463,14 +22463,14 @@ header .col-11 .send_call a {
     color: #fff;
 }
 
-.count .numeral {
+.count_about .numeral {
     font-family: Geometriabold;
     font-weight: bold;
     font-size: 75px;
     color: #fff;
 }
 
-.count .text {
+.count_about .text {
     font-family: Geometriabold;
     font-weight: 500;
     font-size: 35px;
