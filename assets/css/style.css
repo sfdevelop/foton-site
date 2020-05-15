@@ -22625,7 +22625,7 @@ header .col-11 .send_call a {
 }
 
 .profilemore .dropdown-item {
-    white-space: pre-wrap !important;
+    white-space: inherit;
 }
 
 .profilemore .dropdown-toggle {
