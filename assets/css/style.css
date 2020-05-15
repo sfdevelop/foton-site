@@ -18992,7 +18992,8 @@ a.ui-button:active,
     position: absolute;
     right: 0;
     top: 0;
-    width: 2px;
+    width: 4px;
+    border-radius: 2px;
 }
 
 .jspHorizontalBar {
@@ -19017,6 +19018,7 @@ a.ui-button:active,
 .jspTrack {
     background: #333;
     position: relative;
+    border-radius: 2px;
 }
 
 .jspDrag {
@@ -21243,6 +21245,16 @@ textarea {
   src: url("../fonts/Geometria.otf");
 }
 
+blockquote p {
+    border-left: solid 3px #ccc;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.jspVerticalBar {
+    width: 4px !important;
+}
+
 .custom-file-label {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -21599,6 +21611,7 @@ header .col-11 .send_call a {
 
 .btn-filters {
     border-radius: 10px;
+    margin-right: 15px;
 }
 
 .filters_btn {
@@ -22611,6 +22624,10 @@ header .col-11 .send_call a {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
 }
 
+.profilemore .dropdown-item {
+    white-space: pre-wrap !important;
+}
+
 .profilemore .dropdown-toggle {
     background: #fff;
     color: #333;
@@ -22743,4 +22760,13 @@ header .col-11 .send_call a {
     background: #fff;
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.coockee {
+    border: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
 }
