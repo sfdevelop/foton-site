@@ -22617,6 +22617,10 @@ header .col-11 .send_call a {
     bottom: -50px;
 }
 
+.employer {
+    word-wrap: break-word;
+}
+
 .employer img {
     border-radius: 25px 0px;
     border: 0.5px solid rgba(112, 112, 112, 0.2);
