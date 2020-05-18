@@ -21085,8 +21085,10 @@ textarea {
     }
 
     .logo {
-        min-width: 120px;
+        min-width: 95px;
         width: 100%;
+        position: absolute;
+        z-index: 9999;
     }
 
     .mainscreen {
