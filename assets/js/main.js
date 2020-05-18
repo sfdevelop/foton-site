@@ -52282,6 +52282,17 @@ $(document).ready(function () {
 });
 
 
+function initParametersPosition(slide_wrp_filter) {
+	$(slide_wrp_filter).hide()
+	setTimeout(function () {
+		$(slide_wrp_filter).hide().css({
+			"right": -$(slide_wrp_filter).outerWidth() + 'px'
+		}).delay(50).queue(function () {
+			$(slide_wrp_filter).show()
+		});
+	}, 200)
+}
+
 //выезжающее меню с фильтрами
 $(document).ready(function () {
 	var slide_wrp_filter = "#menufilters"; //обертка меню
@@ -52290,17 +52301,21 @@ $(document).ready(function () {
 	var overlay = ".menu-overlay"; //затемнение фона
 
 	//Initial menu position
-	$(slide_wrp_filter).hide().css({
-		"right": -$(slide_wrp_filter).outerWidth() + 'px'
-	}).delay(50).queue(function () {
-		$(slide_wrp_filter).show()
-	});
+	initParametersPosition(slide_wrp_filter);
+	var supportsOrientationChange = 'onorientationchange' in window,
+		orientationEvent = supportsOrientationChange ? 'orientationchange' : "resize";
+
+	window.addEventListener(orientationEvent, function () {
+		$(slide_wrp_filter).removeClass('active');
+		$(overlay).removeAttr('style');
+		initParametersPosition(slide_wrp_filter);
+	}, false);
 
 	$(open_button_filter).click(function (e) { //при нажатии на кнопку "Открыть меню"
 		e.preventDefault();
 		$(slide_wrp_filter).css({
 			"right": "0px"
-		}); //перемещаем меню вправо или изменить "right" на "left" для появления меню с левой стороны
+		}).show(); //перемещаем меню вправо или изменить "right" на "left" для появления меню с левой стороны
 		setTimeout(function () {
 			$(slide_wrp_filter).addClass('active'); //добавляем класс "active"
 		}, 50);
