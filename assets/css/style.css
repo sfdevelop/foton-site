@@ -21085,10 +21085,8 @@ textarea {
     }
 
     .logo {
-        min-width: 95px;
+        min-width: 120px;
         width: 100%;
-        position: absolute;
-        z-index: 9999;
     }
 
     .mainscreen {
@@ -21159,6 +21157,14 @@ textarea {
 
     .side-menu-wrapper {
         width: 80vw !important;
+    }
+}
+
+@media (max-width: 574px) {
+    .logo {
+        position: absolute;
+        z-index: 9999;
+        min-width: 95px;
     }
 }
 
