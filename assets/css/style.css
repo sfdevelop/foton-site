@@ -21253,6 +21253,12 @@ textarea {
   src: url("../fonts/Geometria.otf");
 }
 
+.h-menu {
+    color: #EA7501;
+    font-size: 12px;
+    margin-top: -25px;
+}
+
 blockquote p {
     border-left: solid 3px #ccc;
     font-style: italic;
